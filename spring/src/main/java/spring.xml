@@ -4,9 +4,28 @@
 
 <beans>
 
-	<bean id ="triangle" class = "com.sumit.learning.spring.spring.Triangle">
-		<constructor-arg value = "bhosdika"> 
-		</constructor-arg>
+	<bean id="triangle" class="com.sumit.learning.spring.spring.Triangle">
+		<property name="p1" ref = "p11" ></property>
+		<property name="p2" ref = "p22" ></property>
+		<property name="p3" ref = "p33" ></property>
+
 	</bean>
+
+	<bean id="p11" class="com.sumit.learning.spring.spring.Point">
+		<property name="x" value="0" />
+		<property name="y" value="0" />
+	</bean>
+	
+	<bean id="p22" class="com.sumit.learning.spring.spring.Point">
+		<property name="x" value="20" />
+		<property name="y" value="20" />
+	</bean>
+	
+	<bean id="p33" class="com.sumit.learning.spring.spring.Point">
+		<property name="x" value="30" />
+		<property name="y" value="30" />
+	</bean>
+	
+	
 
 </beans>
