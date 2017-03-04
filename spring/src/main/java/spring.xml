@@ -5,9 +5,8 @@
 <beans>
 
 	<bean id ="triangle" class = "com.sumit.learning.spring.spring.Triangle">
-		<property name="type" value = "chodika"></property>
-	
-	
+		<constructor-arg value = "bhosdika"> 
+		</constructor-arg>
 	</bean>
 
 </beans>

@@ -9,18 +9,15 @@ import org.springframework.core.io.FileSystemResource;
 public class DrawingApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		//Triangle t = new Triangle();
-		
-		//BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
-		
+		// Triangle t = new Triangle();
+		// BeanFactory factory = new XmlBeanFactory(new
+		// FileSystemResource("spring.xml"));
+
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-		
+
 		Triangle t = (Triangle) context.getBean("triangle");
 		t.draw();
-		
-		
 
 	}
 
